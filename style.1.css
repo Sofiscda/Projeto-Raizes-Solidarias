@@ -1,0 +1,309 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .quatro {
+        background-image: url("WhatsApp Image 2024-08-03 at 02.17.24.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        margin: 50px 0 90px;
+    }
+
+    .textinho {
+        margin-top: 20px;
+    }
+
+    .principal {
+        color: white;
+        font-size: 100px;
+        margin: 38px 10px 10px 27px;
+        padding: 83px;
+    }
+
+    .principaltexto {
+        color: gray;
+        font-size: 25px;
+        margin: 60px 30px 50px;
+    }
+
+    .header,
+    .nossavisão,
+    .serviços,
+    .contato,
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .arvoreum {
+        width: 740px;
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin-left: 52px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 20px;
+        margin: -19px 20px 69px 52px;
+    }
+
+    .negrito {
+        font-size: 24px;
+    }
+
+    .imagens {
+        width: 100%;
+        max-width: 568px;
+        height: auto;
+        margin: 30px;
+        border-radius: 10px;
+    }
+
+    .tituloum {
+        font-size: 48px;
+        margin-left: 33px;
+    }
+
+    .textoum {
+        font-size: 20px;
+        margin: -19px 30px 69px;
+    }
+
+    .dois {
+        flex: 1;
+    }
+
+    .arvore {
+        flex: 1;
+    }
+
+    .esquerdo,
+    .direito {
+        flex: 1;
+        margin: 10px 56px;
+    }
+
+    .direito {
+        text-align: right;
+    }
+
+    .form {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    form {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: solid 5px black;
+        padding: 30px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+    .quatro {
+        background-image: url("WhatsApp Image 2024-08-03 at 02.17.24.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        margin: 50px 0;
+    }
+
+    .principal {
+        font-size: 80px;
+        padding: 60px;
+        color: white;
+    }
+
+    .nossavisão,
+    .serviços {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dois,
+    .arvore {
+        width: 48%;
+    }
+
+    .serviço {
+        width: 32%;
+    }
+
+    .arvoreum,
+    .imagens {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 18px;
+    }
+
+    .negrito {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quatro {
+        background-image: url("WhatsApp Image 2024-08-03 at 02.17.24.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 250px;
+        margin: 30px 0 50px;
+    }
+
+    .principal {
+        font-size: 50px;
+        padding: 30px;
+        color: white;
+    }
+
+    .principaltexto {
+        font-size: 18px;
+        margin: 30px 20px;
+    }
+
+    .nossavisão,
+    .serviços,
+    .contato,
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dois,
+    .arvore,
+    .servico,
+    .esquerdo,
+    .direito,
+    form {
+        width: 90%;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 17px;
+    }
+
+    .negrito {
+        font-size: 20px;
+    }
+
+    .arvoreum,
+    .imagens {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .tituloum {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .textoum {
+        font-size: 17px;
+        margin: 10px 0 40px;
+    }
+
+    .esquerdo,
+    .direito {
+        margin: 10px;
+        text-align: left;
+    }
+
+    form {
+        border: solid 4px black;
+        padding: 25px;
+        margin: 20px 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .principal {
+        font-size: 38px;
+        padding: 25px;
+    }
+
+    .principaltexto {
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 16px;
+    }
+
+    .negrito {
+        font-size: 19px;
+    }
+
+    .tituloum {
+        font-size: 26px;
+    }
+
+    .textoum {
+        font-size: 16px;
+    }
+
+    .dois,
+    .arvore,
+    .servico,
+    .esquerdo,
+    .direito,
+    form {
+        width: 95%;
+    }
+}
