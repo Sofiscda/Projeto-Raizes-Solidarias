@@ -1,0 +1,489 @@
+:root {
+    --verde-mata: #1F3B2E;
+    --verde-suave: #3F6650;
+    --dourado: #C9A227;
+    --creme: #FBF8F2;
+    --sálvia: #E9EDE3;
+    --texto: #2A2A28;
+    --texto-suave: #5B5B56;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--texto);
+    background: var(--creme);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.15;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--verde-mata);
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--dourado);
+    color: var(--verde-mata);
+}
+
+/* HEADER */
+.header {
+    background: var(--verde-mata);
+    align-items: center;
+    padding: 18px 40px;
+    gap: 18px;
+}
+
+.logo img {
+    width: 64px;
+    height: auto;
+}
+
+.textao h1 {
+    color: var(--creme);
+    font-size: 34px;
+    letter-spacing: 0.3px;
+}
+
+.textinho p {
+    color: var(--dourado);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 2px 0 0;
+}
+
+/* SEÇÕES GERAIS */
+.titulo {
+    font-family: 'Fraunces', serif;
+    color: var(--verde-mata);
+    border-left: 4px solid var(--dourado);
+    padding-left: 16px;
+}
+
+.tituloum {
+    font-family: 'Fraunces', serif;
+    color: var(--verde-mata);
+}
+
+.negrito {
+    color: var(--verde-mata);
+}
+
+.lista li::marker {
+    color: var(--dourado);
+}
+
+/* CONTATO */
+.contato {
+    background: var(--verde-mata);
+    color: var(--creme);
+    padding: 40px 0;
+}
+
+.contato h1 {
+    color: var(--creme);
+    font-size: 26px;
+}
+
+.contato p,
+.contato a {
+    color: var(--sálvia);
+}
+
+.contato a:hover {
+    color: var(--dourado);
+}
+
+/* FORMULÁRIOS */
+form {
+    background: var(--creme);
+    border-radius: 14px;
+    border-color: var(--verde-mata) !important;
+}
+
+form h1 {
+    color: var(--verde-mata);
+    font-size: 26px;
+}
+
+form input {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    padding: 12px 14px;
+    border: 1px solid #d7d2c4;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus {
+    border-color: var(--dourado);
+}
+
+form input[type="submit"] {
+    background: var(--verde-mata);
+    color: var(--creme);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background: var(--dourado);
+    color: var(--verde-mata);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .quatro {
+        background:
+            linear-gradient(180deg, rgba(31,59,46,0.55), rgba(31,59,46,0.75)),
+            url("fundo.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        margin: 50px 0 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    .textinho {
+        margin-top: 20px;
+    }
+
+    .principal {
+        color: var(--creme);
+        font-size: 78px;
+        margin: 0 0 0 60px;
+        padding: 0;
+    }
+
+    .principaltexto {
+        color: var(--texto-suave);
+        font-size: 22px;
+        max-width: 780px;
+        margin: 60px auto 50px;
+        text-align: center;
+    }
+
+    .header,
+    .nossavisão,
+    .serviços,
+    .contato,
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .arvoreum {
+        width: 740px;
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(31,59,46,0.18);
+    }
+
+    .titulo {
+        font-size: 42px;
+        margin-left: 52px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 18px;
+        color: var(--texto-suave);
+        margin: 14px 20px 69px 52px;
+    }
+
+    .negrito {
+        font-size: 20px;
+    }
+
+    .imagens {
+        width: 100%;
+        max-width: 568px;
+        height: auto;
+        margin: 30px;
+        border-radius: 14px;
+        box-shadow: 0 14px 30px rgba(31,59,46,0.15);
+    }
+
+    .tituloum {
+        font-size: 32px;
+        margin-left: 33px;
+    }
+
+    .textoum {
+        font-size: 18px;
+        color: var(--texto-suave);
+        margin: 14px 30px 69px;
+    }
+
+    .dois {
+        flex: 1;
+    }
+
+    .arvore {
+        flex: 1;
+    }
+
+    .esquerdo,
+    .direito {
+        flex: 1;
+        margin: 10px 56px;
+    }
+
+    .direito {
+        text-align: right;
+    }
+
+    .form {
+        gap: 40px;
+        justify-content: center;
+        padding: 60px 0;
+    }
+
+    form {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        border: solid 2px;
+        padding: 34px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+    .quatro {
+        background:
+            linear-gradient(180deg, rgba(31,59,46,0.55), rgba(31,59,46,0.75)),
+            url("fundo.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        margin: 50px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .principal {
+        font-size: 60px;
+        padding: 40px 50px;
+        color: var(--creme);
+    }
+
+    .principaltexto {
+        color: var(--texto-suave);
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .nossavisão,
+    .serviços {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dois,
+    .arvore {
+        width: 48%;
+    }
+
+    .serviço {
+        width: 32%;
+    }
+
+    .arvoreum,
+    .imagens {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        box-shadow: 0 14px 30px rgba(31,59,46,0.15);
+    }
+
+    .titulo {
+        font-size: 34px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 17px;
+        color: var(--texto-suave);
+    }
+
+    .negrito {
+        font-size: 19px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quatro {
+        background:
+            linear-gradient(180deg, rgba(31,59,46,0.55), rgba(31,59,46,0.75)),
+            url("fundo.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 250px;
+        margin: 30px 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal {
+        font-size: 42px;
+        padding: 20px;
+        color: var(--creme);
+        text-align: center;
+    }
+
+    .principaltexto {
+        font-size: 17px;
+        color: var(--texto-suave);
+        margin: 30px 20px;
+        text-align: center;
+    }
+
+    .nossavisão,
+    .serviços,
+    .contato,
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dois,
+    .arvore,
+    .servico,
+    .esquerdo,
+    .direito,
+    form {
+        width: 90%;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 16px;
+        color: var(--texto-suave);
+    }
+
+    .negrito {
+        font-size: 18px;
+    }
+
+    .arvoreum,
+    .imagens {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(31,59,46,0.15);
+    }
+
+    .tituloum {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .textoum {
+        font-size: 16px;
+        color: var(--texto-suave);
+        margin: 10px 0 40px;
+    }
+
+    .esquerdo,
+    .direito {
+        margin: 10px;
+        text-align: left;
+    }
+
+    form {
+        border: solid 2px;
+        padding: 25px;
+        margin: 20px 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .principal {
+        font-size: 32px;
+        padding: 16px;
+    }
+
+    .principaltexto {
+        font-size: 15px;
+    }
+
+    .titulo {
+        font-size: 26px;
+        padding-left: 12px;
+    }
+
+    .texto,
+    .lista {
+        font-size: 15px;
+    }
+
+    .negrito {
+        font-size: 17px;
+    }
+
+    .tituloum {
+        font-size: 22px;
+    }
+
+    .textoum {
+        font-size: 15px;
+    }
+
+    .dois,
+    .arvore,
+    .servico,
+    .esquerdo,
+    .direito,
+    form {
+        width: 95%;
+    }
+}
